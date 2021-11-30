@@ -4,10 +4,10 @@
     margin-right: auto;
     width:80%;
     border-radius: 15px;
-    /*z-index: -1;*/
+    z-index: -1;
     /*object-fit: cover;*/
     margin-top: -50px;
-    /*position: absolute;*/
+    position: static;
 }
 .introimg {
     border:2px solid white;
@@ -16,7 +16,17 @@
 }
 .intro {
     /*z-index: 1;*/
-    margin-top:-100px;
-    margin-left: 250px;
     /*position: absolute;*/
+}
+.header {
+    margin-top:-100px;
+    margin-left: auto;
+    margin-right: auto;
+    width:50%;
+    background-color: grey;
+    z-index: 1;
+    position: relative;
+}
+.content {
+    background-color: green;
 }
