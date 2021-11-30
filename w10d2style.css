@@ -23,10 +23,19 @@
     margin-left: auto;
     margin-right: auto;
     width:50%;
-    background-color: grey;
+    background-color: dimgray;
     z-index: 1;
     position: relative;
 }
 .content {
-    background-color: green;
+    /*background-color: green;*/
+}
+.nav {
+    height:100%;
+    background-color: gray;
+    padding:5px;
+}
+.aboutMe {
+    background-color: gray;
+    margin-left: 30px;
 }
