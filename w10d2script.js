@@ -64,5 +64,7 @@ buttons.forEach( x => {
 
     }
 })
-
-
+const zoom = document.querySelectorAll("img")
+for (let i = 2; i < zoom.length; i++) {
+    zoom[i].classList.add("zoom")
+}

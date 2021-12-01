@@ -36,13 +36,14 @@
 }
 .nav1 {
     height:100%;
+
 }
 li {
     padding:5px;
 }
 .nav {
     background-color: dimgray;
-
+width:120px;
 border:15px solid dimgrey;
     border-radius: 10px;
     font-size: 20px;
@@ -80,7 +81,7 @@ border:15px solid dimgrey;
 .downloadCv:hover{
     border-color: rgba(255,255,255,1);
 }
-.selected {
+.selected, li:hover {
     border:5px solid red;
     background-color: red;
     border-radius: 10px;
@@ -90,4 +91,47 @@ margin:20px;
     border:1px solid gray;
     border-radius: 5px;
     padding:10px;
+}
+.clientCard {
+    margin:10px;
+    text-align: center;
+    border:1px solid gray;
+    width:200px;
+    height:200px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.resumePreCard {
+    margin-left:30px;
+    width:100%;
+    /*background-color: grey;*/
+}
+.resumeCard {
+    margin-top:40px;
+
+    margin-left:5px;
+    border: 1px solid grey;
+}
+.workCard {
+    width:80%;
+    margin:15px;
+}
+.workCard img {
+    border-radius: 10px;
+    width:150px;
+    /*margin-bottom:20px;*/
+}
+.zoomHidden {
+    overflow: hidden;
+    border-radius: 20px;
+    width:150px;
+}
+.zoom {
+    transition: transform .2s;
+
+}
+.zoom:hover {
+    transform: scale(1.15);
 }
