@@ -1,3 +1,6 @@
+body {
+    background-color: var(--color-primary) !important;
+}
 .headerimg {
     display: block;
     margin-left:auto;
@@ -18,20 +21,20 @@
    margin-top: -80px;
 }
 .header {
-    color:white;
+    color:var(--font-color);
     border-radius: 20px;
     margin-top:-50px;
     margin-left: auto;
     margin-right: auto;
     width:70%;
     padding:20px;
-    background-color: dimgray;
+    background-color: var(--color-third);
     z-index: 1;
     position: relative;
 }
 .content {
  margin:30px;
-    color:white;
+    color:var(--font-color);
 
 }
 .nav1 {
@@ -42,12 +45,12 @@ li {
     padding:5px;
 }
 .nav {
-    background-color: dimgray;
+    background-color: var(--color-third);
 width:120px;
-border:15px solid dimgrey;
+border:15px solid var(--color-secondary);
     border-radius: 10px;
     font-size: 20px;
-    color:white;
+    color:var(--font-color);
 
 }
 .aboutMeImg {
@@ -59,7 +62,7 @@ border:15px solid dimgrey;
 }
 .aboutMe {
     border-radius: 15px;
-    background-color: dimgray;
+    background-color: var(--color-third);
     margin-left: 30px;
 }
 .downloadCv {
@@ -143,7 +146,7 @@ margin:20px;
     transform: scale(1.15);
 }
 .workCard:hover {
- background-color: dimgray;
+ background-color: var(--color-third);
  transition: background-color 200ms linear;
 }
 .modal {
@@ -177,14 +180,14 @@ color:white;
     font-weight: bold;
 }
 .theme-light {
-    --color-primary: #cccccc;
-    /*--color-secondary: #fbfbfe;*/
-    /*--color-accent: #fd6f53;*/
+    --color-primary: #ffffff;
+    --color-secondary: #fbfbfe;
+    --color-third: #eaeaea;
     --font-color: #000000;
 }
 .theme-dark {
-    --color-primary: dimgray;
-    /*--color-secondary: #2a2c2d;*/
-    /*--color-accent: #12cdea;*/
+    --color-primary: #494949;
+    --color-secondary: dimgray;
+    --color-third: #676767;
     --font-color: #ffffff;
 }
