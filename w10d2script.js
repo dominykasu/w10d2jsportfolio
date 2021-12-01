@@ -68,3 +68,15 @@ const zoom = document.querySelectorAll("img")
 for (let i = 3; i < zoom.length; i++) {
     zoom[i].classList.add("zoomImg")
 }
+const workCardModal = document.querySelectorAll(".workCard")
+const modal = document.getElementById("myModal")
+const span = document.getElementsByClassName("close")[0]
+
+workCardModal.forEach(x=> {
+    x.onclick = () => {
+modal.style.display = "block"
+    }
+})
+span.onclick = () => {
+    modal.style.display="none"
+}
