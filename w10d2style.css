@@ -81,9 +81,14 @@ border:15px solid dimgrey;
 .downloadCv:hover{
     border-color: rgba(255,255,255,1);
 }
-.selected, li:hover {
+.selected{
     border:5px solid red;
     background-color: red;
+    border-radius: 10px;
+}
+li:hover {
+    border:3px solid #7c0a0a;
+    background-color: #7c0a0a;
     border-radius: 10px;
 }
 .aboutCard {
@@ -117,6 +122,10 @@ margin:20px;
 .workCard {
     width:80%;
     margin:15px;
+    border:2px solid grey;
+    border-radius: 10px;
+    box-shadow: 5px 10px 10px #888888;
+
 }
 .workCard img {
     border-radius: 10px;
@@ -128,10 +137,13 @@ margin:20px;
     border-radius: 20px;
     width:150px;
 }
-.zoom {
-    transition: transform .2s;
 
-}
-.zoom:hover {
+.workCard:hover .zoomImg {
+    transition: transform .2s;
     transform: scale(1.15);
+}
+.workCard:hover {
+ background-color: dimgray;
+ transition: background-color 200ms linear;
+
 }
