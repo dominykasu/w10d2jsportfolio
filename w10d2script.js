@@ -14,7 +14,7 @@ const contact1 = document.getElementById("contact1")
 const buttons = document.querySelectorAll("li")
 
 
-
+setThemeOnLoad()
 function showDiv(x){
     for (let i = 0; i < buttons.length; i++) {
             buttons[i].classList.remove("selected")
@@ -93,3 +93,11 @@ function toggleTheme() {
 }
 let theme = document.getElementById("colorSwitch")
 theme.onclick = toggleTheme
+function setThemeOnLoad() {
+    if (localStorage.getItem('theme') === 'theme-dark') {
+        setTheme('theme-dark');
+       } else {
+        setTheme('theme-light');
+
+    }
+}
